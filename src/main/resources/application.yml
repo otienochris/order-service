@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/online_shop
-    username: shop
+    url: jdbc:mysql://192.168.0.102:3306/online_shop
+    username: app
     password: Coo2022*
     driverClassName: com.mysql.cj.jdbc.Driver
   jpa:
@@ -10,7 +10,7 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        #        dialect: org.hibernate.dialect.
+#        dialect: org.hibernate.dialect.MySQL8InnoDBDialect
         format_sql: true
 server:
   port: 8081
